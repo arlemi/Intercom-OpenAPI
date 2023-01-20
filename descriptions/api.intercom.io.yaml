@@ -2998,6 +2998,8 @@ components:
         attachments:
           type: array
           description: A list of attachments for the part.
+          items:
+            "$ref": "#/components/schemas/message"
         url:
           type: string
           nullable: true
@@ -3880,6 +3882,8 @@ components:
           type: array
           description: The message types that this subscription supports - can contain
             'email' or 'sms_message'.
+          items:
+            "$ref": "#/components/schemas/message"
     tag_list:
       title: Tags
       type: object
